@@ -27,9 +27,9 @@
 
  function servicioDeBuses() {
 
-     let tipoServicio = parseInt(prompt("¿Que tipo de servicio necesita?(INGRESAR EL NÚMERO)"))
+     let tipoServicio = parseInt(prompt("¿Que tipo de servicio necesita?(INGRESAR EL NÚMERO 1 / 2)"))
      while (tipoServicio != 1 && tipoServicio != 2) {
-         tipoServicio = parseInt(prompt("¿Que tipo de servicio necesita?(INGRESAR EL NÚMERO)"))
+         tipoServicio = parseInt(prompt("¿Que tipo de servicio necesita?(INGRESAR EL NÚMERO 1 / 2 )"))
      }
 
      if (tipoServicio === 1) {
