@@ -1,6 +1,5 @@
 * {
     font-family: 'Courier New', Courier, monospace;
-    background-color: white;
     margin: 0;
     padding: 0;
     box-sizing: inherit;
@@ -14,8 +13,9 @@ header {
 }
 
 .imgEcobus {
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -24,7 +24,7 @@ header {
 .headerTitulo {
     margin-top: 20px;
     margin-left: 20px;
-    font-size: 5em;
+    font-size: 2em;
     background-color: rgba(0, 0, 0, 0);
     color: white;
 }
@@ -39,4 +39,29 @@ header {
 
 .labelClass {
     font-size: 30px;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel.pointer-event {
+    touch-action: pan-y;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.carousel-inner {
+    max-height: 39rem !important;
+    margin-bottom: 20px;
 }

@@ -58,4 +58,10 @@
  servicioDeBuses();
 
 
- const carrito = []
+ let carrito = []
+
+
+ const agregarCarrito = (busid) => {
+     const item = stockbuses.find((bus) => bus.id === busid)
+     carrito.push(item)
+ }

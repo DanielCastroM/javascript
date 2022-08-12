@@ -21,34 +21,121 @@
 
 <body>
 
-    <header>
-        <img class="imgEcobus" src="./recursos/LOGOECOBUS.png" alt="">
-        <h1 class="headerTitulo">TRANSPORTES ECOBUS</h1>
+    <!--========================================================== -->
+    <!-- ENCABEZADO -->
+    <!--========================================================== -->
+    <header class="container-fluid bg-dark d-flex justify-content-center">
+        <p class="text-light mb-0">Transportes Ecobus</p>
     </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./recursos/LOGOECOBUS.png" class="imgEcobus" alt="">
+                <h1 class="textecobus">Transportes Ecobus</h1>
+                <hr>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-4 mb-4 mb-lg-0 m-lg-auto navbar2">
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="">Inicio</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active " aria-current="page" href="">Servicios</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active " aria-current="page" href="">Conductores</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active " aria-current="page" href="">Nosotros</a>
+                    </li>
+                    <li class="nav-item ">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
 
     <section>
         <div class="container">
             <div class="row colorFondo">
-                <h2 class="mb-sm mt-sm">SOLICITAR SERVICIOS</h2>
-                <div class="col-md-12">
-                    <label class="labelClass" for="">BUS - 49 PERSONAS</label>
-                    <input class="btn btn-dark btn-lg mb-xlg" type="submit" name="" id="" value="AGREGAR UNIDAD">
+                <h2 class="mb-sm mt-sm">SOLICITAR SERVICIOS TURÍSTICOS</h2>
+                <h4>NUESTRAS UNIDADES VAN A TODOS LADOS!</h4>
+
+
+                <!-- SLIDER DE IMAGENES-->
+
+
+                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active " data-bs-interval="3000 ">
+                            <img src="https://www.applebus.com.pe/wp-content/uploads/2021/05/bus-1.png" class="d-block w-100" alt="CONDUCTOR ECOBUS 1 ">
+                        </div>
+
+
+                        <div class="carousel-item" data-bs-interval="3000 ">
+                            <img src="https://w7.pngwing.com/pngs/464/756/png-transparent-the-bus-graphic-design-large-car-the-bus.png" class="d-block w-100" alt="CONDUCTOR ECOBUS 2 ">
+                        </div>
+
+
+                        <div class="carousel-item" data-bs-interval="3000 ">
+                            <img src="https://1.bp.blogspot.com/-GAvuteefEH8/WzbzPl9e4fI/AAAAAAAAEms/b0Jr40fHcFY2h0FGbbE_rwAKhBWAifAYwCEwYBhgL/s1600/1860x1050-Media-Gallery-image6-9800-DD-MX-2018.jpg" class="d-block w-100" alt="CONDUCTOR ECOBUS 3 ">
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="3000 ">
+                            <img src="https://img2.freepng.es/20180615/jhk/kisspng-toyota-coaster-bus-toyota-hiace-car-coaster-bus-5b23988c35cd35.0361377415290594682204.jpg" class="d-block w-100" alt="CONDUCTOR ECOBUS 4 ">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
                 </div>
-                <div class="col-md-12">
-                    <label class="labelClass" for="">MINIBUS - 34 PERSONAS</label>
-                    <input class="btn btn-dark btn-lg mb-xlg" type="submit" name="" id="" value="AGREGAR UNIDAD">
-                </div>
-                <div class="col-md-12">
-                    <label class="labelClass" for="">BUS LARGE - 60 PERSONAS</label>
-                    <input class="btn btn-dark btn-lg mb-xlg" type="submit" name="" id="" value="AGREGAR UNIDAD">
-                </div>
-                <div class="col-md-12">
-                    <label class="labelClass" for="">BUS DOS PISOS - 75 PERSONAS</label>
-                    <input class="btn btn-dark btn-lg mb-xlg" type="submit" name="" id="" value="AGREGAR UNIDAD">
-                </div>
+                <table class="table">
+                    <tr>
+                        <th>TIPO DE BUS</th>
+                        <th>CANTIDAD DE PERSONAS</th>
+                        <th>PRECIO</th>
+                        <th>SOLICITAR SERVICIO</th>
+                    </tr>
+                    <tr>
+                        <td>BUS</td>
+                        <td>49 PERSONAS</td>
+                        <td>$1400</td>
+                        <td><input class="btn btn-dark btn-lg mb-xlg" type="submit" name="" id="" value="AGREGAR UNIDAD"></td>
+                    </tr>
+                    <tr>
+                        <td>MINI BUS</td>
+                        <td>33 PERSONAS</td>
+                        <td>$800</td>
+                        <td><input class="btn btn-dark btn-lg mb-xlg" type="submit" name="" id="" value="AGREGAR UNIDAD"></td>
+                    </tr>
+                    <tr>
+                        <td>BUS LARGE</td>
+                        <td>60 PERSONAS</td>
+                        <td>$2000</td>
+                        <td><input class="btn btn-dark btn-lg mb-xlg" type="submit" name="" id="" value="AGREGAR UNIDAD"></td>
+                    </tr>
+                    <tr>
+                        <td>BUS 2 PISOS</td>
+                        <td>75 PERSONAS</td>
+                        <td>$2500</td>
+                        <td><input class="btn btn-dark btn-lg mb-xlg" type="submit" name="" id="" value="AGREGAR UNIDAD"></td>
+                    </tr>
+                </table>
+
             </div>
         </div>
     </section>
+
 
 
 
