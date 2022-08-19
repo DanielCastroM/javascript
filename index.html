@@ -15,7 +15,7 @@
 
     <script src="https://kit.fontawesome.com/26d8a8b5df.js" crossorigin="anonymous"></script>
 
-    <script src="app.js"></script>
+    <!--  <script src="app.js"></script>-->
 </head>
 
 
@@ -23,122 +23,179 @@
 
     <!--========================================================== -->
     <!-- ENCABEZADO -->
-    <!--========================================================== -->
+    <!--========================================================== 
     <header class="container-fluid bg-dark d-flex justify-content-center">
         <p class="text-light mb-0">Transportes Ecobus</p>
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./recursos/LOGOECOBUS.png" class="imgEcobus" alt="">
-                <h1 class="textecobus">Transportes Ecobus</h1>
-                <hr>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-4 mb-4 mb-lg-0 m-lg-auto navbar2">
-                    <li class="nav-item">
-                        <a class="nav-link active " aria-current="page" href="">Inicio</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link active " aria-current="page" href="">Servicios</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link active " aria-current="page" href="">Conductores</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link active " aria-current="page" href="">Nosotros</a>
-                    </li>
-                    <li class="nav-item ">
-                    </li>
-                </ul>
+-->
+    <header>
+        <div class="container">
+            <div class="row align-items-stretch justify-content-between">
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                    <img src="./recursos/LOGOECOBUS.png" class="imgEcobus" alt="">
+                    <a class="navbar-brand" href="#">TRANSPORTES ECOBUS SAC</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <img src="recursos/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px" width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></img>
+                                <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                    <table id="lista-carrito" class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                                    <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
+                                    Compra</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </div>
-    </nav>
+    </header>
 
 
-    <section>
+    <main>
         <div class="container">
             <div class="row colorFondo">
                 <h2 class="mb-sm mt-sm">SOLICITAR SERVICIOS TURÍSTICOS</h2>
                 <h4>NUESTRAS UNIDADES VAN A TODOS LADOS!</h4>
 
-
-                <!-- SLIDER DE IMAGENES-->
-
-
-                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active " data-bs-interval="3000 ">
-                            <img src="https://www.applebus.com.pe/wp-content/uploads/2021/05/bus-1.png" class="d-block w-100" alt="CONDUCTOR ECOBUS 1 ">
-                        </div>
-
-
-                        <div class="carousel-item" data-bs-interval="3000 ">
-                            <img src="https://w7.pngwing.com/pngs/464/756/png-transparent-the-bus-graphic-design-large-car-the-bus.png" class="d-block w-100" alt="CONDUCTOR ECOBUS 2 ">
-                        </div>
-
-
-                        <div class="carousel-item" data-bs-interval="3000 ">
-                            <img src="https://1.bp.blogspot.com/-GAvuteefEH8/WzbzPl9e4fI/AAAAAAAAEms/b0Jr40fHcFY2h0FGbbE_rwAKhBWAifAYwCEwYBhgL/s1600/1860x1050-Media-Gallery-image6-9800-DD-MX-2018.jpg" class="d-block w-100" alt="CONDUCTOR ECOBUS 3 ">
-                        </div>
-
-                        <div class="carousel-item" data-bs-interval="3000 ">
-                            <img src="https://img2.freepng.es/20180615/jhk/kisspng-toyota-coaster-bus-toyota-hiace-car-coaster-bus-5b23988c35cd35.0361377415290594682204.jpg" class="d-block w-100" alt="CONDUCTOR ECOBUS 4 ">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-                </div>
-                <table class="table">
-                    <tr>
-                        <th>TIPO DE BUS</th>
-                        <th>CANTIDAD DE PERSONAS</th>
-                        <th>PRECIO</th>
-                        <th>SOLICITAR SERVICIO</th>
-                    </tr>
-                    <tr>
-                        <td>BUS</td>
-                        <td>49 PERSONAS</td>
-                        <td>$1400</td>
-                        <td><input class="btn btn-dark btn-lg mb-xlg" type="submit" name="" id="" value="AGREGAR UNIDAD"></td>
-                    </tr>
-                    <tr>
-                        <td>MINI BUS</td>
-                        <td>33 PERSONAS</td>
-                        <td>$800</td>
-                        <td><input class="btn btn-dark btn-lg mb-xlg" type="submit" name="" id="" value="AGREGAR UNIDAD"></td>
-                    </tr>
-                    <tr>
-                        <td>BUS LARGE</td>
-                        <td>60 PERSONAS</td>
-                        <td>$2000</td>
-                        <td><input class="btn btn-dark btn-lg mb-xlg" type="submit" name="" id="" value="AGREGAR UNIDAD"></td>
-                    </tr>
-                    <tr>
-                        <td>BUS 2 PISOS</td>
-                        <td>75 PERSONAS</td>
-                        <td>$2500</td>
-                        <td><input class="btn btn-dark btn-lg mb-xlg" type="submit" name="" id="" value="AGREGAR UNIDAD"></td>
-                    </tr>
-                </table>
-
             </div>
         </div>
-    </section>
+
+        <!-- SLIDER DE IMAGENES
+
+        <div class="container">
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active " data-bs-interval="3000 ">
+                        <img src="https://www.applebus.com.pe/wp-content/uploads/2021/05/bus-1.png" class="d-block w-100" alt="CONDUCTOR ECOBUS 1 ">
+                    </div>
+
+
+                    <div class="carousel-item" data-bs-interval="3000 ">
+                        <img src="https://w7.pngwing.com/pngs/464/756/png-transparent-the-bus-graphic-design-large-car-the-bus.png" class="d-block w-100" alt="CONDUCTOR ECOBUS 2 ">
+                    </div>
+
+
+                    <div class="carousel-item" data-bs-interval="3000 ">
+                        <img src="https://1.bp.blogspot.com/-GAvuteefEH8/WzbzPl9e4fI/AAAAAAAAEms/b0Jr40fHcFY2h0FGbbE_rwAKhBWAifAYwCEwYBhgL/s1600/1860x1050-Media-Gallery-image6-9800-DD-MX-2018.jpg" class="d-block w-100" alt="CONDUCTOR ECOBUS 3 ">
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="3000 ">
+                        <img src="https://img2.freepng.es/20180615/jhk/kisspng-toyota-coaster-bus-toyota-hiace-car-coaster-bus-5b23988c35cd35.0361377415290594682204.jpg" class="d-block w-100" alt="CONDUCTOR ECOBUS 4 ">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+            </div>
+        </div>
+-->
+        <div class="container" id="lista-productos">
+
+            <div class="card-deck mb-3 text-center">
+                <br>
+                <h1>SOLICTAR SERVICIOS DE TURISMO / TRANSPORTE DE PERSONAS</h1>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">BUS DOS PISOS</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://1.bp.blogspot.com/-GAvuteefEH8/WzbzPl9e4fI/AAAAAAAAEms/b0Jr40fHcFY2h0FGbbE_rwAKhBWAifAYwCEwYBhgL/s1600/1860x1050-Media-Gallery-image6-9800-DD-MX-2018.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">2500</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>CAPACIDAD 80 PERSONAS</li>
+                            <li>AÑO 2020</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">MINIBUS </h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://www.applebus.com.pe/wp-content/uploads/2021/05/bus-1.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">2500</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>CAPACIDAD 35 PERSONAS</li>
+                            <li>AÑO 2022</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">BUS DOS PISOS</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://1.bp.blogspot.com/-GAvuteefEH8/WzbzPl9e4fI/AAAAAAAAEms/b0Jr40fHcFY2h0FGbbE_rwAKhBWAifAYwCEwYBhgL/s1600/1860x1050-Media-Gallery-image6-9800-DD-MX-2018.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">1400</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>CAPACIDAD 80 PERSONAS</li>
+                            <li>AÑO 2020</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Comprar</a>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">BUS DOS PISOS</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://1.bp.blogspot.com/-GAvuteefEH8/WzbzPl9e4fI/AAAAAAAAEms/b0Jr40fHcFY2h0FGbbE_rwAKhBWAifAYwCEwYBhgL/s1600/1860x1050-Media-Gallery-image6-9800-DD-MX-2018.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">2500</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>CAPACIDAD 80 PERSONAS</li>
+                            <li>AÑO 2020</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+    </main>
 
 
 
 
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/pedido.js"></script>
 </body>
 
 </html>
