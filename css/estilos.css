@@ -10,6 +10,7 @@ header {
     background-color: darkgreen;
     display: flex;
     align-items: center;
+    position: fixed;
 }
 
 .imgEcobus {
@@ -33,7 +34,7 @@ header {
     background-color: rgba(0, 0, 0, 0);
 }
 
-#container {
+.container {
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -64,4 +65,33 @@ header {
 .carousel-inner {
     max-height: 39rem !important;
     margin-bottom: 20px;
+}
+
+.imgbanner {
+    position: relative;
+    width: 100%;
+    max-height: 39rem !important;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+header {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.card-img-top {
+    width: 20vw;
+    height: 15vw;
+    max-width: 100%;
+    max-height: 100%;
 }
